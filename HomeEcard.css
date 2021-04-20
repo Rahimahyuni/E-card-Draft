@@ -1,0 +1,65 @@
+*{
+ font-family: georgia;
+ margin: 0;
+ padding: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url(mountfuji.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+ul li {
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 4px 20px;
+  border: 1px solid #fff tranparent;
+
+}
+
+ul li a:hover{
+  background-color: #C64075;
+  color: #fff;
+}
+
+ul li.active a {
+  background-color:#C64075;
+  color: #fff;
+}
+.title{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.title{
+width: 100%
+position: absolute;
+top: 50%
+transform: translateY(-50%);
+text-align: center;
+color: #fff;
+}
+.title h1{
+  font-size: 57px;
+  margin-top: 10px;
+}
+.title p{
+  font-size: 23px;
+  margin: 7px auto;
+  font-weight:150;
+  line-height: 25px;
+}
