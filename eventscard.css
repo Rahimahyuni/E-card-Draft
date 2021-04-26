@@ -1,0 +1,43 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 21px;
+  margin-right: 20px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1px;
+  color: #fff;
+  padding: 4px 20px;
+  border-radius: 3px;
+  border: 1px solid #fff tranparent;
+}
+
+active,a:hover{
+  background: #CC609F;
+  transition: 0.5s;
+}
+
+nav{
+  background: #A2276F;
+  height: 55px;
+  width: 100%;
+}
+
+header{
+background-image: url(webpage.jpg);
+background-position: center;
+height: 100vh;
+background-size: cover;
+}

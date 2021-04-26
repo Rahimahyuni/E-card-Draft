@@ -5,7 +5,7 @@
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url(mountfuji.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(mountfuji.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -14,7 +14,7 @@ header {
 ul {
   list-style-type: none;
   float: right;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-right: 20px;
 }
 ul li {
@@ -23,21 +23,19 @@ ul li {
 
 ul li a{
   text-decoration: none;
+  font-size: 18px;
+  line-height: 1px;
   color: #fff;
   padding: 4px 20px;
+  border-radius: 3px;
   border: 1px solid #fff tranparent;
-
 }
 
-ul li a:hover{
-  background-color: #C64075;
-  color: #fff;
+active,a:hover{
+  background: #812059;
+  transition: 0.5s;
 }
 
-ul li.active a {
-  background-color:#C64075;
-  color: #fff;
-}
 .title{
   position: absolute;
   top:50%;
