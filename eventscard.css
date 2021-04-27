@@ -35,9 +35,65 @@ nav{
   width: 100%;
 }
 
-header{
-background-image: url(webpage.jpg);
-background-position: center;
+.background{
 height: 100vh;
+width: 100%;
+background: url(webpage.jpg) center no-repeat;
+background-position: center;
 background-size: cover;
+}
+
+div .card {
+  width: 530px;
+  height: 530px;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  top:55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title {
+ text-align: center;
+ margin-top: 40px;
+ font-family: Kaushan Script;
+ font-size: 16px;
+ color: #454545 ;
+
+}
+
+.title02 {
+  text-align: center;
+  margin-top: 5px;
+  font-family: Kaushan Script;
+  font-size: 16px;
+  color: #454545 ;
+
+}
+
+.name {
+ text-align: center;
+ margin-top: 10px;
+ font-family: Dancing Script;
+ font-size: 61px;
+ color: #454545 ;
+ letter-spacing: 3px;
+}
+
+.weddingdate {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Kaushan Script;
+  font-size: 20px;
+  color: #454545 ;
+}
+
+.title03 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Kaushan Script;
+  font-size: 16px;
+  color: #454545 ;
+
 }
