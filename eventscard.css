@@ -16,7 +16,8 @@ ul li {
 
 ul li a{
   text-decoration: none;
-  font-size: 18px;
+  font-family: Prata;
+  font-size: 15px;
   line-height: 1px;
   color: #fff;
   padding: 4px 20px;
@@ -44,19 +45,19 @@ background-size: cover;
 }
 
 div .card {
-  width: 530px;
-  height: 530px;
+  width: 540px;
+  height: 540px;
   border-radius: 6px;
   background: #fff;
   position: absolute;
   top:55%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%,-50%);
 }
 
 .title {
  text-align: center;
- margin-top: 40px;
+ margin-top: 58px;
  font-family: Kaushan Script;
  font-size: 16px;
  color: #454545 ;
@@ -65,7 +66,7 @@ div .card {
 
 .title02 {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 3px;
   font-family: Kaushan Script;
   font-size: 16px;
   color: #454545 ;
@@ -74,16 +75,16 @@ div .card {
 
 .name {
  text-align: center;
- margin-top: 10px;
+ margin-top: 5px;
  font-family: Dancing Script;
- font-size: 61px;
+ font-size: 55px;
  color: #454545 ;
  letter-spacing: 3px;
 }
 
 .weddingdate {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   font-family: Kaushan Script;
   font-size: 20px;
   color: #454545 ;
@@ -91,9 +92,22 @@ div .card {
 
 .title03 {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   font-family: Kaushan Script;
   font-size: 16px;
   color: #454545 ;
+
+}
+
+div .design {
+  height: 540px;
+  width: 540px;
+  background: url(wedding.png) center no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 
 }

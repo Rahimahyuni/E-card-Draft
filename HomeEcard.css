@@ -1,5 +1,4 @@
 *{
- font-family: georgia;
  margin: 0;
  padding: 0;
 }
@@ -23,6 +22,7 @@ ul li {
 
 ul li a{
   text-decoration: none;
+  font-family: Prata;
   font-size: 18px;
   line-height: 1px;
   color: #fff;
@@ -52,12 +52,18 @@ text-align: center;
 color: #fff;
 }
 .title h1{
+  font-family: Prata;
   font-size: 57px;
   margin-top: 10px;
+  letter-spacing: 5px;
 }
 .title p{
+  font-family: georgia;
   font-size: 23px;
-  margin: 7px auto;
+  margin: 1px auto;
   font-weight:150;
   line-height: 25px;
+  letter-spacing: 2px;
+  line-height: 30px;
+
 }
