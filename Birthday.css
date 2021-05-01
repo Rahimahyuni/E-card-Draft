@@ -3,43 +3,49 @@
  padding: 0;
 }
 
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),url(vector-pastel-background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
 ul {
   list-style-type: none;
   float: right;
-  margin-top: 21px;
+  margin-top: 25px;
   margin-right: 20px;
 }
-
 ul li {
   display: inline-block;
 }
 
 ul li a{
   text-decoration: none;
+  font-family: Prata;
   font-size: 18px;
   line-height: 1px;
   color: #fff;
   padding: 4px 20px;
   border-radius: 3px;
-  border: 1px solid #fff tranparent;
+  border: 1px solid #fff transparent;
 }
+
 
 active,a:hover{
-  background: #CC609F;
+  background: #812059;
   transition: 0.5s;
 }
-
 nav{
-  background: #465e7a;
+  background: #384b61;
   height: 55px;
   width: 100%;
-
 }
 
 .background{
 height: 100vh;
 width: 100%;
-background: url(vector-pastel-background.jpg) center no-repeat;
+background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),url(vector-pastel-background.jpg);
 background-position: center;
 background-size: cover;
 }
