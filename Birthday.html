@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -21,22 +25,23 @@
   <nav>
 
     <ul class="option">
+      <img class= "logo2" src="logo2.png" alt="logoRSN2">
       <li><a href="HomeEcard.html">Home</a></li>
-      <li><a href="Templates.html">Templates</a></li>
-      <li><a href="Fav.html">Favourite</a></li>
-      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="Birthday.html">Birthday</a></li>
+      <li><a href="events.html">Event</a></li>
+      <li><a href="Business.html">Businesss</a></li>
     </ul>
   </nav>
 </header>
 
   <div class="forcard">
 
-    <div class="card">
+    <div class="card" id="design1">
       <div class="design">
       <p class ="invited">YOU ARE INVITED TO</p>
-      <p class ="name">Anna's<br>Birthday </p>
+      <p class ="name" id = "nama">Anna's<br>Birthday </p>
       <hr>
-      <p class ="date">
+      <p class ="date10">
         <span id="day"> SATURDAY </span>
         <span id="coma"> , </span>
         <span id="month"> SEPTEMBER </span>
@@ -45,15 +50,103 @@
       </p>
 
       <p id="location"> LOREM IPSUM STREET 23 <br id="city">YOUR CITY</br></p>
-      <p class="time"> 4PM </p>
+      <p id="time"> 4PM </p>
     </div>
   </div>
+  </div>
+  <div class="customize">
+    <p class="kastam">Customize Your Card Here!</p>
 
+     <div class="content">
+       <label>Who's Birthday is it? </label> <br/>
+       <input type="text" id="name1" placeholder="eg. Anna's Birthday"/> <br/>
+       <label>Day: </label> <br/>
+       <input type="text" id="day1" placeholder="eg. SATURDAY"/> <br/>
+       <label>Month:</label>  <br/>
+       <input type="text" id="month1" placeholder="eg. SEPTEMBER"/> <br/>
+       <label>Date:</label> <br/>
+       <input type="text" id="date1" placeholder="eg. 26"/> <br/>
+       <label>Location:</label> <br/>
+       <input type="text" id="location1" placeholder="eg. lorem ipsum, city"/> <br/>
+       <label>Time:</label> <br/>
+       <input type="text" id="time1" placeholder="eg. 4PM" required = "required" pattern = "[A-Z]{2}[\d]{4}"/> <br/>
+
+
+       <label>Background Color:</label> </br>
+       <label><input type="radio"  name="color" onclick="white()"/>White</label>
+       <label><input type="radio"  name="color" onclick="yellow()"/>Yellow</label>
+       <label><input type="radio" name="color" onclick="blue()"/>Blue</label>
+       <label><input type="radio" name="color" onclick="peach()"/>Peach</label> </br></br>
+
+       <label>Choose your style!</label> </br>
+       <label><input type="radio"  name="styleBack" id= "styletwo" onclick="one()"/>1</label>
+       <label><input type="radio"  name="styleBack" id= "styleone" onclick="two()"/>2</label>
+       <label><input type="radio"  name="styleBack" id= "stylethree" onclick="three()"/>3</label>
+       <label><input type="radio"  name="styleBack" id= "stylefour" onclick="four()"/>4</label>
+       <label><input type="radio"  name="styleBack" id= "stylefive" onclick="five()"/>5</label>
+
+
+      </br><button onclick="changeMe()" id="btn" >See Changes</button>
+      </br><button onclick="saveContent()" id="btn" >Save</button>
+      <button onclick="loadContent()" id="btn" >Load</button>
+      <button onclick="clearContent()" id="btn" >Clear</button>
+     </div>
+  </div>
 </div>
+<script>
 
-</div>
+function peach(){
+  document.getElementById("design1").style.backgroundColor = "#f4ede5";
+}
+function blue(){
+  document.getElementById("design1").style.backgroundColor = "#d1e4fa";
+}
+function yellow(){
+  document.getElementById("design1").style.backgroundColor = "#fff67f";
+}
+function white(){
+  document.getElementById("design1").style.backgroundColor = "#FFF";
+}
+function one(){
+  document.getElementById("design1").style.backgroundImage = "url(birthday3.png)";
+}
+function two(){
+  document.getElementById("design1").style.backgroundImage = "url(birthday2.png)";
+}
+function three(){
+  document.getElementById("design1").style.backgroundImage = "url(background2.png)";
+}
+function four(){
+  document.getElementById("design1").style.backgroundImage = "url(background3.png)";
+}
+function five(){
+  document.getElementById("design1").style.backgroundImage = "url(background5.png)";
+}
+//-- button untuk d takan
+function changeMe() {
+  var name1 = document.getElementById("name1").value;
+  var day1 = document.getElementById("day1").value;
+  var month1 = document.getElementById("month1").value;
+  var date1 = document.getElementById("date1").value;
+  var location1 = document.getElementById("location1").value;
+  var time1 = document.getElementById("time1").value;
 
+//---- untuk tukar ke arah form atu --
 
+  var thename = document.getElementById("nama");
+  thename.innerHTML = name1;
+  var theday = document.getElementById("day");
+  theday.innerHTML = day1;
+  var themonth = document.getElementById("month");
+  themonth.innerHTML = month1;
+  var thedate = document.getElementById("date");
+thedate.innerHTML = date1;
+  var thelocation = document.getElementById("location");
+  thelocation.innerHTML = location1;
+  var thetime = document.getElementById("time");
+  thetime.innerHTML = time1;
 
+}
+</script>
   </body>
 </html>

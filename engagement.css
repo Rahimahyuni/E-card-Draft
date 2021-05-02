@@ -1,0 +1,179 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),url(vector-pastel-background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  font-family: Prata;
+  font-size: 15px;
+  line-height: 1px;
+  color: #fff;
+  padding: 4px 20px;
+  border-radius: 3px;
+  border: 1px solid #fff tranparent;
+}
+
+.active,a:hover{
+  background:#306C94;
+  transition: 0.5s;
+}
+
+
+nav{
+  background: #384b61;
+  height: 55px;
+  width: 100%;
+}
+
+.background{
+height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),url(vector-pastel-background.jpg);
+background-position: center;
+background-size: cover;
+}
+
+div .card {
+  width: 538px;
+  height: 538px;
+  border-radius: 6px;
+  background: #fff  ;
+  background-image: url(engaged.png);
+  position: absolute;
+  top:55%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+}
+
+
+.title {
+ text-align: center;
+ margin-top: 70px;
+ font-family: Kaushan Script;
+ font-size: 17px;
+ color: #454546 ;
+ letter-spacing: 2px;
+
+}
+
+.title02 {
+  text-align: center;
+  margin-top: 35px;
+  font-family: Kaushan Script;
+  font-size: 35px;
+  color: #454546 ;
+  letter-spacing: 4px;
+
+}
+
+.engaged1 {
+ text-align: center;
+ margin-top: 40px;
+ font-family: Dancing Script;
+ font-size: 60px;
+ color: #454546 ;
+ letter-spacing: 3px;
+ line-height: 45px;
+}
+
+.engagementdate {
+  text-align: center;
+  margin-top: 5px;
+  font-family: Kaushan Script;
+  font-size: 17px;
+  color: #454546 ;
+}
+
+.title03{
+  text-align: center;
+  margin-top: 11px;
+  font-family: Kaushan Script;
+  font-size: 17px;
+  color: #454546 ;
+
+}
+ p#venue{
+  text-align: center;
+  margin-top: 5px;
+  font-family: Kaushan Script;
+  font-size: 16px;
+  color:  #454546;
+
+}
+
+}
+
+div .design {
+  height: 540px;
+  width: 540px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top:50%;
+  left: 35%;
+  transform: translate(-50%,-50%);
+
+}
+
+div .customize {
+  width: 300px;
+  height: 515px;
+  border-radius: 6px;
+  background: #1a3668;
+  opacity: 83%;
+  position: absolute;
+  top:55%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+  color: #ffff;
+}
+
+ div .title_custom {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Kaushan Script;
+  font-size: 20px;
+  letter-spacing: 1px;
+
+}
+
+div .content {
+line-height: 25px;
+text-align: center;
+font-size: 15px;
+margin: 5px;
+font-family: new tegomin;
+}
+
+#btn {
+margin-top: 13px;
+
+}
+
+.logo2{
+  margin-top: 15px;
+  margin-right: 20px;
+  width:149px;
+  height:149px;
+  position: absolute;
+  top:3.5%;
+  left: 5%;
+  transform: translate(-50%,-50%);
+}
