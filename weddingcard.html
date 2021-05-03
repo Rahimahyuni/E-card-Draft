@@ -90,7 +90,7 @@
          <label><input type="radio" name="color" onclick="blue()"/>Blue</label>
          <label><input type="radio" name="color" onclick="green()"/>Green</label> </br>
 
-        <button onclick="rememberMe()" id="btn" >Change</button>
+        <button onclick="loadContent()" id="btn" >Load</button>
         <button onclick="saveContent()" >Save</button>
 
        </div>
@@ -114,7 +114,7 @@
      document.getElementById("design1").style.backgroundColor = "#FFF";
    }
 
-   function rememberMe() {
+   function loadContent() {
      var groom = document.getElementById("groom").value;
      var bride = document.getElementById("bride").value;
      var months = document.getElementById("months").value;
@@ -147,43 +147,58 @@
 
    }
 
-   function saveContent(){
-     var groom = document.getElementById("groom");
-     var bride = document.getElementById("bride");
-     var months = document.getElementById("months");
-     var dates = document.getElementById("dates");
-     var years = document.getElementById("years");
-     var times = document.getElementById("times");
-     var place = document.getElementById("venues");
-
-     localStorage.setItem("groom",groom.value);
-     localStorage.setItem("bride"),bride.value);
-     localStorage.setItem("months",months.value);
-     localStorage.setItem("dates",dates.value);
-     localStorage.setItem("years",years.value);
-     localStorage.setItem("times",times.value;
-     localStorage.setItem("venues",place.value;
-     alert("Content Saved!")
-     window.location.reload();
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   // function saveContent(){
+   //   var groom = document.getElementById("groom").value;
+   //   var bride = document.getElementById("bride").value;
+   //   var months = document.getElementById("months").value;
+   //   var dates = document.getElementById("dates").value;
+   //   var years = document.getElementById("years").value;
+   //   var times = document.getElementById("times").value;
+   //   var place = document.getElementById("venues").value;
+   //
+   //   localStorage.setItem("groom", groom.value);
+   //   localStorage.setItem("bride", bride.value);
+   //   localStorage.setItem("months", months.value);
+   //   localStorage.setItem("dates", dates.value);
+   //   localStorage.setItem("years", years.value);
+   //   localStorage.setItem("times", times.value);
+   //   localStorage.setItem("venues", place.value);
+   //   alert("Content Saved!")
+   //   window.location.reload();
+   // }
+//
+//    function fillContent(){
+//      var groom = document.getElementById("groom");
+//      var bride = document.getElementById("bride");
+//      var months = document.getElementById("months");
+//      var dates = document.getElementById("dates");
+//      var years = document.getElementById("years");
+//      var times = document.getElementById("times");
+//      var place = document.getElementById("venues");
+//
+//      var mygroom = document.getElementById("name01");
+//      mygroom.innerHTML = localStorage.getElementById("groom");
+//
+//      var mybride = document.getElementById("name02");
+//      mybride.innerHTML = localStorage.getElementById("bride");
+//
+//      var mymonths = document.getElementById("month");
+//      mymonths.innerHTML = localStorage.getElementById("months");
+//
+//      var mydates = document.getElementById("date");
+//      mydates.innerHTML = localStorage.getElementById("dates");
+//
+//      var myyears = document.getElementById("year");
+//      myyears.innerHTML = localStorage.getElementById("years");
+//
+//      var mytimes = document.getElementById("time");
+//      mytimes.innerHTML = localStorage.getElementById("times");
+//
+//      var myplace = document.getElementById("venue");
+//      myplace.innerHTML = localStorage.getElementById("venues");
+//
+//
+// }
 
 
 
