@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Business Card</title>
+  </head>
+  <body>
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-front">
+          <div class="left">
+            <h4><span>Web</span> Design</h4>
+
+
+          </div>
+          <div class="right">
+            <div class="person right-content">
+              <i class="fas fa-user-tie"></i>
+              <div>
+                <p id="onestnlast">Saiful handsome</p>
+                <p id="companynames">Web Design</p>
+
+              </div>
+
+            </div>
+            <div class="phone right-content">
+              <i class="fas fa-phone"></i>
+              <div>
+                <p id="p1">+555</p>
+                <p id="p2">+666</p>
+
+              </div>
+
+            </div>
+            <div class="email right-content">
+              <i class="fas fa-envelope-open"></i>
+              <div>
+                <p id="emails">Saiful@gmail.com</p>
+
+              </div>
+
+            </div>
+            <div class="address right-content">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <p id="addresses">Main Street</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+<div class="customize">
+  <p class="title_custom">Customize Personal Information</p>
+  <div class="content">
+    <label>First and Last name:</label> <br/>
+    <input type="text" id="firstnlast"/> <br/>
+
+    <label>Company Name:</label> <br/>
+    <input type="text" id="companyname"/> <br/>
+
+    <label>Personal Phone Number:</label> <br/>
+    <input type="text" id="number1"/> <br/>
+
+    <label>Telephone Phone Number:</label> <br/>
+    <input type="text" id="number2"/> <br/>
+
+    <label>Email:</label> <br/>
+    <input type="text" id="email"/> <br/>
+
+    <label>Address:</label> <br/>
+    <input type="text" id="house"/> <br/>
+
+    <button onclick="rememberMe()" id="btn" >Submit</button>
+
+
+
+  </div>
+
+</div>
+<script>
+  function rememberMe() {
+    var firstnlast = document.getElementbyId("firstnlast").value;
+    var companyname = document.getElementbyId("companyname").value;
+    var number1 = document.getElementbyId("number1").value;
+    var number2 = document.getElementbyId("number2").value;
+    var email = document.getElementbyId("email").value;
+    var house = document.getElementbyId("house").value;
+
+    var myfirstnlast = document.getElementById("onestnlast");
+    myfirstnlast.innerHTML = firstnlast;
+    var mycompanyname = document.getElementById("companynames");
+    mycompanyname.innerHTML = companyname;
+    var mynumber1 = document.getElementById("p1");
+    mynumber1.innerHTML = number1;
+    var mynumber2 = document.getElementById("p2");
+    mynumber2.innerHTML = number2;
+    var myemail = document.getElementById("emails");
+    myemails.innerHTML = email;
+    var myhouse = document.getElementById("addresses");
+    myhouse.innerHTML = house;
+
+
+  }
+
+</script>
+  </body>
+</html>

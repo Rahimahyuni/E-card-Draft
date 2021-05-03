@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>B_Card</title>
+</head>
+
+<style>
+    .card {
+        position: relative;
+        height: 460px;
+        width: 300px;
+        background-color: #ecf0f1;
+        margin: 60px auto;
+    }
+
+    .header {
+        position: absolute;
+        height: 220px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
+    }
+
+    .header h3 {
+        position: absolute;
+        font-family: sans-serif;
+        color: white;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 50px;
+        left: 90px;
+    }
+
+    .header p {
+        position: absolute;
+        font-family: sans-serif;
+        color: rgb(236, 233, 233);
+        font-size: 13px;
+        top: 160px;
+        left: 90px
+    }
+
+    .body {
+        position: absolute;
+        height: 126px;
+        left: 5px;
+        right: 5px;
+        top: 52%;
+        background-color: lightgray;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .body ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .body ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+
+    .body ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+
+    .body ul li h3 {
+        top: -17px;
+        left: 58px;
+        color: #576574;
+    }
+
+    .body ul li p {
+        top: 14px;
+        left: 59px;
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #576574;
+    }
+
+    .body ul li i {
+        left: 8px;
+        top: 7px;
+        color: #16a085;
+        font-size: 26px;
+    }
+
+    .body ul li:nth-child(1) {
+        top: -16px;
+    }
+
+    .body ul li:nth-child(2) {
+        top: 26px;
+    }
+
+    .body ul li:nth-child(3) {
+        top: 68px;
+    }
+
+    .body ul li:nth-child(1) i {
+        left: 12px;
+    }
+
+    .body li:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    /*footer*/
+
+    .footer {
+        position: absolute;
+        height: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right, #e2e1e1, #ecf0f1);
+    }
+
+    .footer ul {
+        position: absolute;
+        left: -60px;
+    }
+
+    .footer ul li {
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+    .footer ul li i {
+        font-size: 30px;
+        color: #7f8c8d;
+        transition: all .3s ease-in;
+    }
+
+    .footer ul li:hover i {
+        transform: scale(0.9);
+        color: #1dd1a1;
+        cursor: pointer;
+        border-bottom: 2px solid #1dd1a1;
+    }
+    .customize {
+      width: 350px;
+      height: 400px;
+      border-radius: 6px;
+      background: #1abc9c;
+      opacity: 83%;
+      position: absolute;
+      top: 55%;
+      left: 25%;
+      transform: translate(-50%,-50%);
+    }
+    .content{
+      line-height: 24px;
+      text-align: center;
+      font-size: 15px;
+      margin: 5px;
+      font-family: new tegomin;
+
+    }
+    .title_custom{
+      text-align: center;
+      margin-top: 30px;
+      font-family: Kaushan Script;
+      font-size: 20px;
+      letter-spacing: 1px;
+
+    }
+</style>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+
+            <h3 id="names">Mr.Kucing</h3>
+            <p id="occupations">Mobile App Developer</p>
+        </div>
+
+        <div class="body">
+            <ul>
+                <li>
+                    <h3 id="numbers">5-555-666-777</h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3 id="emails">indomee@gmail.com</h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3 id="websites">www.saifulstress.com</h3>
+                    <p>Website address</p>
+                    <i class="fas fa-globe-americas"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="customize">
+      <p class="title_custom">Customize Card</p>
+      <div class="content">
+        <label>Name:</label> <br/>
+        <input type="text" id="name"/> <br/>
+
+        <label>Company Name:</label> <br/>
+        <input type="text" id="occupation"/> <br/>
+
+        <label>Personal Phone Number:</label> <br/>
+        <input type="text" id="number1"/> <br/>
+
+        <label>Email:</label> <br/>
+        <input type="text" id="email"/> <br/>
+
+        <label>Website:</label> <br/>
+        <input type="text" id="web"/> <br/>
+
+        <button onclick="rememberMe()" id="btn" >Submit</button>
+
+
+
+      </div>
+
+    </div>
+    <script>
+      function rememberMe() {
+        var name = document.getElementbyId("name").value;
+        var occupation = document.getElementbyId("occupation").value;
+        var number1 = document.getElementbyId("number1").value;
+        var email = document.getElementbyId("email").value;
+        var web = document.getElementbyId("web").value;
+
+        var thename = document.getElementById("name");
+        myfirstnlast.innerHTML = name;
+        var thecompanyname = document.getElementById("occupation");
+        mycompanyname.innerHTML = occupation;
+        var thenumber1 = document.getElementById("number");
+        mynumber1.innerHTML = number;
+        var theemail = document.getElementById("email");
+        myemails.innerHTML = email;
+        var theweb = document.getElementById("web");
+        myhouse.innerHTML = web;
+
+
+      }
+
+    </script>
+
+</body>
+
+</html>
