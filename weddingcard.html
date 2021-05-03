@@ -19,7 +19,8 @@
 
 
   </head>
-  <body>
+  <body onload="fillContent()">
+
     <div class="background">
 
       <nav>
@@ -89,7 +90,9 @@
          <label><input type="radio" name="color" onclick="blue()"/>Blue</label>
          <label><input type="radio" name="color" onclick="green()"/>Green</label> </br>
 
-        <button onclick="rememberMe()" id="btn" >Save Edit</button>
+        <button onclick="rememberMe()" id="btn" >Change</button>
+        <button onclick="saveContent()" >Save</button>
+
        </div>
 
 
@@ -143,6 +146,28 @@
      myplace.innerHTML = place;
 
    }
+
+   function saveContent(){
+     var groom = document.getElementById("groom");
+     var bride = document.getElementById("bride");
+     var months = document.getElementById("months");
+     var dates = document.getElementById("dates");
+     var years = document.getElementById("years");
+     var times = document.getElementById("times");
+     var place = document.getElementById("venues");
+
+     localStorage.setItem("groom",groom.value);
+     localStorage.setItem("bride"),bride.value);
+     localStorage.setItem("months",months.value);
+     localStorage.setItem("dates",dates.value);
+     localStorage.setItem("years",years.value);
+     localStorage.setItem("times",times.value;
+     localStorage.setItem("venues",place.value;
+     alert("Content Saved!")
+     window.location.reload();
+   }
+
+
 
 
 
