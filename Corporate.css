@@ -2,7 +2,6 @@
  margin: 0;
  padding: 0;
 }
-
 header {
   background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)),url(vector-pastel-background.jpg);
   height: 100vh;
